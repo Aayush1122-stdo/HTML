@@ -1,0 +1,34 @@
+body{
+    background-color: hwb(24 0% 0%);
+}
+
+.fact-file{
+    background-color: lab(45.07% 31.37 46.06);  
+    margin: 10px;
+    border: 20px solid hwb(187 0% 0%);
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,2.4);
+
+}
+
+.animal-name{
+    color: hwb(187 0% 0%);
+    text-align: center;
+    font-style: italic;
+}
+
+.detail{
+    color: lab(88.59% -75.49 42.9);
+    width:250px;
+    padding:9px;
+    border: 1px solid #ccc;
+    font-style: oblique;
+}
+
+.cool-fact{
+    color: oklab(93.947% -0.11171 0.19309);
+    width: 280px;
+        padding: 9px;
+        border: 10px solid #bb1515;
+        font-style: sans-serif;
+    }

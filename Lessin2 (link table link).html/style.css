@@ -1,0 +1,18 @@
+#int {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: gray;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+header,
+nav,
+int,
+footer {
+    border: 1px solid black;
+}
