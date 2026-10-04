@@ -16,3 +16,36 @@ int,
 footer {
     border: 1px solid black;
 }
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+#intro{
+    grid-area: intro;
+}
+
+#main{
+    grid-area: main;
+}
+
+#best-sellers{
+    grid-area: best-seller;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: "header header header header intro"
+    "nav nav nav nav intro"
+    "main main main main best-seller"
+    "footer footer footer footer footer";
+}
