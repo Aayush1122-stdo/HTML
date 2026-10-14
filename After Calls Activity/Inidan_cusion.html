@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cuisines</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Main Heading */
+        h1.main-title {
+            text-align: center;
+            color: #5b4b8a;
+            margin: 20px 0;
+        }
+
+        /* Header / Hero Section */
+        .header-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-container img {
+            width: 100%;
+            height: auto;
+            opacity: 0.85;
+            display: block;
+        }
+
+        .hero-text {
+            position: absolute;
+            background-color: rgba(91, 138, 131, 0.85);
+            color: white;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+            border-radius: 4px;
+        }
+
+        /* Sticky Navbar using Flexbox */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #ffe8cd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 25px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .navbar a:hover {
+            color: #5b4b8a;
+        }
+
+        /* Section Styling using Flexbox */
+        section {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .section-title {
+            background-color: #ffe8cd;
+            color: #b5651d;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            display: flex;
+            background-color: #fbe6ec;
+            padding: 20px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .section-content img {
+            width: 250px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .section-content p {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Footer using Flexbox */
+        footer {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #1e2230;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px;
+        }
+
+        footer .author {
+            color: #ff6b6b;
+            font-size: 14px;
+        }
+
+        footer .date {
+            color: #ffffff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Title -->
+    <h1 class="main-title">Indian Cuisines</h1>
+
+    <!-- Header Section with Image and Overlay Text -->
+    <div class="header-container">
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1000&q=80"
+            alt="Indian Spices Background">
+        <div class="hero-text">
+            The traditional food of India has been widely appreciated for its fabulous use of herbs and spices. Indian
+            cuisine is known for its large assortment of dishes. The cooking style varies from region to region and is
+            largely divided into South Indian & North Indian cuisine. India is quite famous for its diverse
+            multi-cuisine available in a large number of restaurants and food outlets, which is embodiment of unity in
+            diversity.
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <a href="#bengali">BENGALI</a>
+        <a href="#gujarati">GUJARATI</a>
+        <a href="#mughlai">MUGHLAI</a>
+        <a href="#punjabi">PUNJABI</a>
+        <a href="#south-indian">SOUTH INDIAN</a>
+    </nav>
+
+    <!-- Bengali Section -->
+    <section id="bengali">
+        <div class="section-title">Bengali Food</div>
+        <div class="section-content">
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=80"
+                alt="Bengali Thali">
+            <p>Bengali cuisine is appreciated for its fabulous use of panchphoron, a term used to refer to the five
+                essential spices, namely mustard, fenugreek seed, cumin seed, aniseed, and black cumin seed. The
+                specialty of Bengali food lies in the perfect blend of sweet and spicy flavors.</p>
+        </div>
+    </section>
+
+    <!-- Gujarati Section -->
+    <section id="gujarati">
+        <div class="section-title">Gujarati Food</div>
+        <div class="section-content">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80"
+                alt="Gujarati Thali">
+            <p>The traditional Gujarati thali is primarily vegetarian and has a high nutritional value. The typical
+                Gujarati thali consists of varied kinds of lip-smacking dishes. Gujarati cuisine has so much to offer
+                and each dish has an absolutely different cooking style.</p>
+        </div>
+    </section>
+
+    <!-- Mughlai Section -->
+    <section id="mughlai">
+        <div class="section-title">Mughlai Food</div>
+        <div class="section-content">
+            <img src="https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=500&q=80"
+                alt="Mughlai Food">
+            <p>Mughlai cuisine is one of the most popular cuisines, whose origin can be traced back to the times of
+                Mughal Empire. Mughlai cuisine consists of the dishes that were prepared in the kitchens of the royal
+                Mughal Emperors. Indian cuisine is predominantly influenced by the cooking style practiced during the
+                Mughal era.</p>
+        </div>
+    </section>
+
+    <!-- Punjabi Section -->
+    <section id="punjabi">
+        <div class="section-title">Punjabi Food</div>
+        <div class="section-content">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80"
+                alt="Punjabi Food">
+            <p>The cuisine of Punjab has an enormous variety of mouth-watering vegetarian as well as non-vegetarian
+                dishes. The spice content ranges from minimal to pleasant to high. Punjabi food is usually relished by
+                people of all communities. In Punjab, home cooking differs from the restaurant cooking style.</p>
+        </div>
+    </section>
+
+    <!-- South Indian Section -->
+    <section id="south-indian">
+        <div class="section-title">South Indian Cuisine</div>
+        <div class="section-content">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80"
+                alt="South Indian Food">
+            <p>The cuisine of South India is known for its light, low calorie appetizing dishes. The traditional food of
+                South India is mainly rice based. The cuisine is famous for its wonderful mixing of rice and lentils to
+                prepare yummy lip smacking dosas, vadas, idlis and utappams.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="author">Published by: Author Name</div>
+        <div class="date">Date: 14/10/2026</div>
+    </footer>
+
+</body>
+
+</html>
