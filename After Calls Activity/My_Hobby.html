@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies & Interests</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("hobby1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header Box */
+        .header-box {
+            background: rgb(73, 43, 4);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(218, 107, 3, 0.6);
+            text-align: center;
+            color: aliceblue;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+            border: 2px solid rgb(218, 107, 3);
+        }
+
+        .header-box h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .header-box p {
+            color: #ffd8b1;
+            font-size: 1.1rem;
+        }
+
+        /* Interests Card */
+        .interests-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(218, 107, 3, 0.6);
+            color: #222222;
+            padding: 35px;
+        }
+
+        .interests-card h2 {
+            color: rgb(73, 43, 4);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid rgb(218, 107, 3);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Grid Layout for Hobbies */
+        .hobby-grid {
+            display: grid;
+            gap: 20px;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        /* Individual Hobby Cards */
+        .hobby-item a {
+            display: block;
+            background: #fff8f2;
+            border: 2px solid rgb(218, 107, 3);
+            border-radius: 15px;
+            padding: 20px;
+            text-decoration: none;
+            color: rgb(73, 43, 4);
+            transition: all 0.3s ease;
+        }
+
+        .hobby-item a:hover {
+            transform: translateY(-6px);
+            background: rgb(73, 43, 4);
+            color: #ffffff;
+            box-shadow: 0 8px 15px rgba(73, 43, 4, 0.3);
+        }
+
+        .hobby-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .hobby-desc {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #ffd8b1;
+            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header-box">
+            <h1>My Hobby</h1>
+            <p>Welcome to my personal space! Click on an interest below to explore.</p>
+        </header>
+
+        <main class="interests-card">
+            <h2>My Interests</h2>
+            <ul class="hobby-grid">
+                <li class="hobby-item">
+                    <a href="#reading">
+                        <span class="hobby-title">📚 Reading</span>
+                        <span class="hobby-desc">Exploring new worlds through fiction, mystery, and sci-fi books.</span>
+                    </a>
+                </li>
+                <li class="hobby-item">
+                    <a href="#writing">
+                        <span class="hobby-title">✍️ Writing</span>
+                        <span class="hobby-desc">Putting creative thoughts, short stories, and ideas onto paper.</span>
+                    </a>
+                </li>
+                <li class="hobby-item">
+                    <a href="#coding">
+                        <span class="hobby-title">💻 Coding</span>
+                        <span class="hobby-desc">Building websites, solving logic puzzles, and creating cool
+                            apps.</span>
+                    </a>
+                </li>
+                <li class="hobby-item">
+                    <a href="#gaming">
+                        <span class="hobby-title">🎮 Playing Games</span>
+                        <span class="hobby-desc">Teaming up with friends and conquering challenging levels.</span>
+                    </a>
+                </li>
+                <li class="hobby-item">
+                    <a href="#travelling">
+                        <span class="hobby-title">✈️ Travelling</span>
+                        <span class="hobby-desc">Discovering new places, trying local foods, and capturing
+                            memories.</span>
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>Created by Me &bull; 2026</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
