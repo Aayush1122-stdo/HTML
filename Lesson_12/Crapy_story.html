@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>A Creepy Story</title>
+    <style>
+        body.dark{
+            color: white;
+            background: black;
+        }
+
+        button {
+            display: block;
+            margin: 5px;
+        }
+
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>👻The Basement👻</h1>
+
+    <hr>
+    <hr>
+
+    <p id="story">I wanted to find my friend, and he was hiding in the basement.</p>
+    
+    <button onclick="goDark()">Get In The Mood</button>
+    
+    <div class="textEntry">Type your name here, if you dare: <input type="text" id="name"></div>
+    
+    <button onclick="typeAndScream()">😱Don't Dare To Click Here😱</button>
+    <button onclick="finishTheStory()">🤔Tell Me What Happened!🤔</button>
+
+    <script>
+          function goDark() {
+                document.body.className = "dark";
+            }
+        
+            function typeAndScream() {
+            var personName = document.getElementById("name").value;
+            alert(" I Said Don't Dare To Do That " + personName);
+           }
+
+        function finishTheStory() {
+            document.getElementById("story").innerHTML = "Oof, I carefully searched the whole for your friend, and I found him in the basement. He was hiding behind a box, and he was scared. I told him it was okay, and we went back upstairs together.";
+        }
+    </script>
+</body>
+
+</html>
