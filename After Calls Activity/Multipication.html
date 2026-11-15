@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Using Functions</title>
+</head>
+
+<body>
+    <h1>Multiplication Using Functions</h1>
+    <p>This page multiplies two numbers with a function.</p>
+    <p id="result"></p>
+
+    <script>
+        function multiplyNumbers(a, b) {
+            return a * b;
+        }
+
+        let num1 = 6;
+        let num2 = 7;
+        let product = multiplyNumbers(num1, num2);
+
+        document.getElementById("result").textContent =
+            num1 + " × " + num2 + " = " + product;
+    </script>
+</body>
+
+</html>
