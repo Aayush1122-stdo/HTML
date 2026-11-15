@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Solar System</title>
+    <style>
+        /* Page background and layout */
+        body {
+            background-color: #0b0d17;
+            color: #e0e6ed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* PART 4: colour and style the heading */
+        .planet-title {
+            color: #ff9e00;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 158, 0, 0.5);
+        }
+
+        /* Card styling for the description */
+        #description {
+            background-color: #161b2e;
+            border: 1px solid #2a3356;
+            border-radius: 12px;
+            padding: 24px 32px;
+            max-width: 550px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <p id="description"></p>
+
+    <script>
+        // PART 1: make the heading
+        const title = document.createElement("h1");
+        title.className = "planet-title";
+        title.textContent = "Our Solar System";
+
+        // PART 2: put the heading on the page
+        document.body.prepend(title);
+
+        // PART 3: write the description
+        const description = document.getElementById("description");
+        description.innerHTML =
+            "Mars is known as the Red Planet.<br>" +
+            "Jupiter is the largest planet in our solar system.<br>" +
+            "Saturn is famous for its bright ring system.";
+    </script>
+</body>
+
+</html>
